@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="blue">
+<table border="2" align="center">
+    <tr><th>eid</th><th>ename</th><th>esalary</th><th>ejoiningdate</th><th>eclosingdate</th></tr>
+        {% for e in records %}
+        <tr><td>{{ e.eid }}</td>
+            <td>{{ e.ename }}</td>
+        <td>{{ e.esalary }}</td>
+        <td>1{{ e.ejoiningdate }}</td>
+        <td>{{ e.eclosingdate }}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

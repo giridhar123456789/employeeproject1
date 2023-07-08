@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="blue">
+<form action="./update">
+    Employee id         :<input type="text" name="t1" value="{{ rec.eid }}"><br>
+    Employee name       :<input type="text" name="t2" value="{{ rec.ename }}"><br>
+    Employee salary     :<input type="text" name="t3" value="{{ rec.pcost }}"><br>
+    Employee joiningdate:<input type="text" name="t4" value="{{ rec.joiningdate| date:"Y-m-d"}}"><br>
+    Product closingdate :<input type="text" name="t5" value="{{ rec.eclosingdate|date:"Y-m-d" }}"><br>
+<input type="save" value="update">
+</form>
+</body>
+</html>
